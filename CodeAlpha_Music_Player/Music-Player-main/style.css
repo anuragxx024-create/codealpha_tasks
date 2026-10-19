@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.music-player {
+    width: 380px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.album {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.music-icon {
+    font-size: 70px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#artist {
+    margin: 8px 0 20px;
+    color: #ddd;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #ddd;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+#progress {
+    margin: 10px 0 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.controls button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    background: white;
+    color: #222;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+}
+
+#playBtn {
+    width: 70px;
+    height: 70px;
+    background: #ff416c;
+    color: white;
+}
+
+.volume-control {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+#playlist {
+    list-style: none;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#playlist li {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playlist li:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+#playlist li.active {
+    background: #ff416c;
+}
